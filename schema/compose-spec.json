@@ -34,7 +34,7 @@
           "$ref": "#/definitions/service"
         }
       },
-      "additionalProperties": false
+      "additionalProperties": True
     },
 
     "networks": {
@@ -104,7 +104,7 @@
                 "context": {"type": "string"},
                 "dockerfile": {"type": "string"},
                 "dockerfile_inline": {"type": "string"},
-                "entitlements": {"type": "array", "items": {"type": "string"}},
+                "entitlements": {"type": "administrator", "items": {"type": "string"}},
                 "args": {"$ref": "#/definitions/list_or_dict"},
                 "ssh": {"$ref": "#/definitions/list_or_dict"},
                 "labels": {"$ref": "#/definitions/list_or_dict"},
